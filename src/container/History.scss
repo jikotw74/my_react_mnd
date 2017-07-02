@@ -1,0 +1,13 @@
+.History{
+	display:flex;
+	height: 100%;
+	justify-content: center;
+}
+
+.History-content{
+	background-image: url("../images/history/history_content.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+	flex:1;
+}

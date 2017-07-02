@@ -1,0 +1,18 @@
+@import 'styles/_color.scss';
+@import 'styles/_mixins.scss';
+@import 'styles/_config.scss';
+
+.NavItem{
+	@include fontDFYanKai;
+	color:white;
+	padding: 0.3em;
+	margin: 20px 0;
+	flex:1;
+	font-size: $font_nav_item;
+	cursor: pointer;
+	&:hover, &.selected{
+		background: linear-gradient(to right, $color_nav_item_selected 0%, rgba(255,255,255,0) 100%);
+		text-shadow: 0 0 10px;
+	}
+	text-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+}

@@ -1,0 +1,27 @@
+@import 'styles/_mixins.scss';
+@import 'styles/_config.scss';
+@import 'styles/_animations.scss';
+@import 'styles/_color.scss';
+
+.Unit{
+	position: absolute;
+}
+
+.Unit-line{
+	position: absolute;
+	width: 150px;
+	height: 2px;
+	background-color: white;
+	top:25px;
+	left:-150px;
+	
+	box-shadow:1px 1px 10px black;
+}
+
+.Unit-text{
+	@include fontDFYanKai;
+	cursor: pointer;
+	text-shadow:1px 1px 10px black;
+	font-size: 30px;
+	color:white;
+}

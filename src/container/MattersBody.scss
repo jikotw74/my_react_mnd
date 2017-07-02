@@ -1,0 +1,17 @@
+.MattersBody{
+    overflow: auto;
+    position: relative;
+    padding-bottom: 300px;
+    margin-bottom: 54px;
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.Matter-scorll-element{
+	.Matter{
+		padding: 30px;
+		&.is-selected{
+			background: linear-gradient(to right, rgba(201,157,126,0.15) 0%,rgba(201,157,126,1) 100%);
+		}
+	}
+	
+}

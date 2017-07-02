@@ -1,0 +1,33 @@
+@import 'styles/_mixins.scss';
+@import 'styles/_animations.scss';
+
+.Organizations{
+	height: 200px;
+    background-image: url('../images/line2.png');
+    background-size: auto 237px;
+	display: flex;
+}
+
+.Organization-content{
+	@include fade-in;
+	display: flex;
+	flex:1;
+	background-size: contain;
+	background-repeat: no-repeat;
+	padding-left: 600px;
+}
+
+.Organization-image{
+	width: 500px;
+}
+
+.Organization-text{
+	@include fontDFYanKai;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center; 
+	flex:1;
+	margin: 50px;
+	font-size: 30px;
+	line-height: 1.5em;
+}

@@ -1,0 +1,12 @@
+@font-face {
+  font-family: DFYanKai;
+  src: url(fonts/DFYanKai-W5-WIN-BF.ttf) format("truetype"); }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  overflow: hidden; }
+
+* {
+  box-sizing: border-box; }

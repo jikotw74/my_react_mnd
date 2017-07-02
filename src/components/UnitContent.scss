@@ -1,0 +1,33 @@
+@import 'styles/_config.scss';
+@import 'styles/_color.scss';
+@import 'styles/_mixins.scss';
+
+.UnitContent{
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	.Unit-name-wrapper{
+		display: flex;
+		margin-bottom: 5px;
+	}
+	.Unit-name{
+		@include fontDFYanKai;
+		font-size: 36px;
+		color: white;
+		text-shadow: 1px 1px 10px black;
+		margin-right: 10px;
+		padding: 10px;
+		cursor: pointer;
+		&.is-selected{
+			background: linear-gradient(to right, $color_nav_item_bg 0%, rgba(255,255,255,0.1) 100%);
+		}
+	}
+	.Unit-description{
+		@include fontDFYanKai;
+		flex:1;
+		line-height: 2em;
+		font-size: $font_size_content;
+		overflow-y: auto;
+		padding-right: 10px;
+	}
+}

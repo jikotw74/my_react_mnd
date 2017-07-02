@@ -1,0 +1,35 @@
+.Coin{
+	font-size: 24px;
+	font-family: 'DFYanKai', sans-serif;
+	width: 240px;
+    height: 237px;
+    background-image: url('../images/coin2.png');
+    background-size: auto 237px;
+    background-position: center center;    
+    background-repeat: no-repeat;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+    position: relative;
+    &.selected{
+		background-image: url('../images/knot2.png');
+		.Coin-text{
+			background-image: url('../images/red_bg.png');
+			background-size: 100%;
+			background-repeat: no-repeat;
+			background-position: center -15px;
+		}
+    }
+	&:hover, &.selected{
+		// font-weight: bold;
+		// background-color: rgba(50, 50, 255, 0.2);
+
+	}
+	
+}
+
+.Coin-text{
+	text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.8);
+	padding-top: 5px;
+	padding-bottom: 25px;
+}

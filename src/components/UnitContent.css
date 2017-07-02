@@ -1,0 +1,24 @@
+.UnitContent {
+  display: flex;
+  flex-direction: column;
+  padding: 20px; }
+  .UnitContent .Unit-name-wrapper {
+    display: flex;
+    margin-bottom: 5px; }
+  .UnitContent .Unit-name {
+    font-family: 'DFYanKai', sans-serif;
+    font-size: 36px;
+    color: white;
+    text-shadow: 1px 1px 10px black;
+    margin-right: 10px;
+    padding: 10px;
+    cursor: pointer; }
+    .UnitContent .Unit-name.is-selected {
+      background: linear-gradient(to right, #802d00 0%, rgba(255, 255, 255, 0.1) 100%); }
+  .UnitContent .Unit-description {
+    font-family: 'DFYanKai', sans-serif;
+    flex: 1;
+    line-height: 2em;
+    font-size: 24px;
+    overflow-y: auto;
+    padding-right: 10px; }

@@ -1,0 +1,83 @@
+@import 'styles/_zIndex.scss';
+@import 'styles/_mixins.scss';
+@import 'styles/_animations.scss';
+@import 'styles/_color.scss';
+
+.Units{
+	@include transAnimation;
+	@include fade-in;
+	display: flex;
+	flex:1;
+	position: relative;
+	overflow: hidden;
+	.Unit{
+		@include transOpacity;
+		z-index: $zIndex_unit;
+	}
+
+	&.is-open{
+		opacity: 0;
+		.Unit{
+			opacity: 0;
+		}
+		.Cancel-units{
+			opacity: 0;
+		}
+		.Cancel-close-btn{
+			opacity: 0;	
+		}
+	}
+}
+
+.Cancel-units.NavItem{
+	@include transOpacity;
+	position: absolute;
+	display: flex;
+    justify-content: flex-end;
+    align-items: center;
+	bottom:200px;
+	right: 0;
+	background: linear-gradient(to left, $color_nav_item_bg 0%, rgba(255,255,255,0) 100%);
+	text-align: right;
+	width: 350px;
+
+	&:hover, &.selected{
+		background: linear-gradient(to left, $color_nav_item_selected 0%, rgba(255,255,255,0) 100%);
+		text-shadow: 0 0 10px;
+	}
+
+	&:after{
+		content:"";
+		display: block;
+		background-image: url('../images/ic_keyboard_arrow_right_white_24dp_2x.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+		width:50px;
+		height: 50px;
+	}
+	&.is-fixed{
+		top: 0;
+    	left: 0;
+    	bottom: auto;
+    	margin-top: 5px;
+    	cursor: default;
+		&:after{
+			display: none;
+		}
+		&:hover, &.selected{
+			background: linear-gradient(to left, $color_nav_item_bg 0%, rgba(255,255,255,0) 100%);
+			text-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+		}
+	}
+}
+
+.Cancel-wrapper{
+	display: flex;
+	flex:1;
+}
+
+.Cancel-close-btn{
+	@include closeBtn;
+	right: 0;
+	@include transOpacity;
+}

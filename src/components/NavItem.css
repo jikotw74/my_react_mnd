@@ -1,0 +1,12 @@
+.NavItem {
+  font-family: 'DFYanKai', sans-serif;
+  color: white;
+  padding: 0.3em;
+  margin: 20px 0;
+  flex: 1;
+  font-size: 42px;
+  cursor: pointer;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.3); }
+  .NavItem:hover, .NavItem.selected {
+    background: linear-gradient(to right, #00527f 0%, rgba(255, 255, 255, 0) 100%);
+    text-shadow: 0 0 10px; }

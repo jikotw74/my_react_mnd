@@ -1,0 +1,30 @@
+.Dialog {
+  transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+  position: absolute;
+  width: 1920px;
+  height: 500px;
+  top: 25%;
+  right: 0px;
+  z-index: 5200;
+  opacity: 0;
+  will-change: opacity;
+  opacity: 0; }
+  .Dialog.is-open {
+    opacity: 1; }
+
+.Dialog-content {
+  background-color: #ac6632;
+  height: 100%;
+  margin-left: 38%;
+  margin-right: 60px; }
+
+.Dialog-close-btn {
+  position: absolute;
+  top: -30px;
+  right: 30px;
+  width: 80px;
+  height: 80px;
+  background-color: black;
+  cursor: pointer;
+  z-index: 9999;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); }

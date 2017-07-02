@@ -1,0 +1,23 @@
+@import 'styles/_mixins.scss';
+@import 'styles/_config.scss';
+
+.VideosBody{
+	flex: 1;
+	display: flex;
+	margin: 0 0 20px 0;
+	overflow: hidden;
+	box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+}
+.Video-video{
+	flex: 2;
+	height: 100%;
+}
+.Video-content{
+	flex: 1;
+	height: 100%;
+	@include fontDFYanKai;
+	font-size: $font_size_content;
+	padding: 10px;
+	line-height: 1.5em;
+	background-color: rgba(255, 255, 255, 0.7);
+}

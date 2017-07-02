@@ -1,0 +1,13 @@
+@import 'styles/_mixins.scss';
+
+.Matter{
+	@include fontDFYanKai;
+}
+.Matter-title{
+	font-size: 20px;
+	line-height: 1.5em;
+}
+.Matter-description{
+	font-size: 20px;
+	line-height: 1.5em;
+}

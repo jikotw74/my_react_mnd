@@ -1,0 +1,123 @@
+@import 'styles/_config.scss';
+@import 'styles/_zIndex.scss';
+@import 'styles/_animations.scss';
+@import 'styles/_color.scss';
+
+.App {
+	width: $App_width;
+    height: $App_height;
+    overflow: hidden;
+    &.at-home{
+        .App-home{
+            z-index: $zIndex_app;
+            @include fade-in;
+        }
+        .App-wrapper{
+            display: none;
+        }
+    }
+
+    &.has-dialog{
+        // .App-wrapper-body, .footer{
+        //     filter: blur(1px);
+        // }
+    }
+
+    &.no-footer{
+        .App-wrapper-body{
+            height: $App_height - $App_header_height;
+        }
+        .footer{
+            z-index: 0;
+            opacity: 0;
+        }
+    }
+
+    .App-home{
+        z-index: $zIndex_app - 1;
+    }
+}
+
+.App-home {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-image: url('./images/home.jpg');
+    background-size: 1920px 1080px;
+    background-color: black;
+    z-index: $zIndex_app;
+    overflow: hidden;
+}
+
+.App-home-nav {
+    position: absolute;
+    display: flex;
+    background-color: fade_out(#897b6c, 0.3);
+    top: $App_home_nav_top;
+    left: 0;
+    width: $App_width;
+    height: $App_home_nav_height;
+    z-index: $zIndex_app - 1;
+    animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    .NavItem{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.App-wrapper {
+    width: 100%;
+    height: 100%;
+    background-image: url('./images/wrapper-bg.jpg');
+    background-size: contain;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: $zIndex_app - 1;
+}
+
+.App-wrapper-header{
+    width: 100%;
+	height: $App_header_height;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.App-wrapper-nav{
+    position: absolute;
+    overflow: auto;
+    width: $App_nav_width;
+    height: $App_content_height;
+    top: $App_header_height;
+    left: 0;
+    z-index: $zIndex_app_nav;
+    background: linear-gradient(to right, $color_nav_item_bg 0%, rgba(255,255,255,0) 100%);
+}
+
+.App-wrapper-body{
+    position: absolute;
+    width: $App_width;
+    height: $App_content_height;
+    display: flex;
+    flex:1;
+    overflow: auto;
+    top: $App_header_height;
+    left: 0;
+    padding-left: $App_nav_width;
+    z-index: $zIndex_app_body;
+}
+
+.footer{
+    width: $App_width;
+    height: $App_height - $App_header_height - $App_content_height;
+    position: absolute;
+    top:$App_header_height + $App_content_height;
+    left: 0;
+    z-index: $zIndex_app;
+    animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: flex;
+}

@@ -9,6 +9,7 @@
 # production
 /build
 /public/resources
+/src/images
 
 # misc
 .DS_Store

@@ -1,4 +1,4 @@
-export default [{
+data.units = [{
     name: "台北處、儲蓄會 薪俸組、新北組",
     x: 950,
     y: 120,

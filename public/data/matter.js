@@ -1,4 +1,4 @@
-export default [{
+data.matter = [{
     year: 60,
     y: 20,
     content: [

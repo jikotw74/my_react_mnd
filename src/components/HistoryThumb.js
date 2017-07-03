@@ -1,25 +1,6 @@
 import React, { Component } from 'react';
 import './HistoryThumb.css';
-
-import img1 from '../images/history/history_thumb_01.png';
-import img2 from '../images/history/history_thumb_02.png';
-import img3 from '../images/history/history_thumb_03.png';
-import img4 from '../images/history/history_thumb_04.png';
-import img5 from '../images/history/history_thumb_05.png';
-import img6 from '../images/history/history_thumb_06.png';
-import img7 from '../images/history/history_thumb_07.png';
-import img8 from '../images/history/history_thumb_08.png';
-
-const images = [
-    img1, 
-    img2, 
-    img3, 
-    img4, 
-    img5,
-    img6, 
-    img7, 
-    img8
-];
+const data = window.data.history;
 
 class HistoryThumb extends Component {
   // constructor(props) {
@@ -30,8 +11,9 @@ class HistoryThumb extends Component {
   //   }
 
   render() {
+    const item = data[this.props.index];
     let divStyle ={
-        backgroundImage: `url(${images[(this.props.index)]})`
+        backgroundImage: `url(${process.env.PUBLIC_URL + "resources/" + item.thumb})`
     }
     let className = "HistoryThumb";
     if(this.props.selected)className += " selected";

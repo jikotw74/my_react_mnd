@@ -1,4 +1,5 @@
-export default [{
+var data = {};
+data.index = [{
     name: "組織遞嬗"
 },{
     name: "興革事項"

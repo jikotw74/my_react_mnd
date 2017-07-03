@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import './Videos.css';
 import VideoThumb from '../components/VideoThumb';
-import data from '../data/video';
 import { connect } from 'react-redux';
 import { updateVideoSelected } from '../actions';
+
+const data = window.data.video;
 
 class Videos extends Component {
     constructor(props) {

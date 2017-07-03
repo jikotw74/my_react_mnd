@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import './Matters.css';
 import Coin from '../components/Coin';
-import data from '../data/matter';
 import { connect } from 'react-redux'
 import { updateMatterSelected } from '../actions';
+const data = window.data.matter;
 var Scroll  = require('react-scroll');
 var Link    = Scroll.Link;
 // var Element    = Scroll.Element;

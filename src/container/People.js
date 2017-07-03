@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import './People.css';
 import Person from '../components/Person';
-import data from '../data/people';
 import { connect } from 'react-redux'
 import { openDialog } from '../actions'
+
+const data = window.data.people;
 
 class People extends Component {
     // constructor(props) {

@@ -15,10 +15,12 @@ const getClientEnvironment = require('./env');
 
 // Webpack uses `publicPath` to determine where the app is being served from.
 // It requires a trailing slash, or the file assets will get an incorrect path.
-const publicPath = paths.servedPath;
+// const publicPath = paths.servedPath;
+const publicPath = "";
 // Some apps do not use client-side routing with pushState.
 // For these, "homepage" can be set to "." to enable relative asset paths.
-const shouldUseRelativeAssetPaths = publicPath === './';
+// const shouldUseRelativeAssetPaths = publicPath === './';
+const shouldUseRelativeAssetPaths = true;
 // `publicUrl` is just like `publicPath`, but we will provide it to our app
 // as %PUBLIC_URL% in `index.html` and `process.env.PUBLIC_URL` in JavaScript.
 // Omit trailing slash as %PUBLIC_URL%/xyz looks better than %PUBLIC_URL%xyz.
@@ -139,6 +141,10 @@ module.exports = {
           /\.gif$/,
           /\.jpe?g$/,
           /\.png$/,
+          // /\.ttf$/,
+          // /\.eot$/,
+          // /\.woff$/,
+          // /\.woff2$/,
         ],
         loader: require.resolve('file-loader'),
         options: {
@@ -214,6 +220,14 @@ module.exports = {
         ),
         // Note: this won't work without `new ExtractTextPlugin()` in `plugins`.
       },
+      // {
+      //   test: /\.(eot|ttf|woff|woff2)$/,
+      //   loader: require.resolve('file-loader'),
+      //   options: {
+      //     name: 'fonts/[name].[ext]',
+      //   },
+      // }
+
       // ** STOP ** Are you adding a new loader?
       // Remember to add the new extension(s) to the "file" loader exclusion list.
     ],

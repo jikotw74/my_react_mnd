@@ -2,11 +2,12 @@ import React, { Component } from 'react';
 import './Units.css';
 import Unit from '../components/Unit';
 import UnitContent from '../components/UnitContent';
-import dataUnits from '../data/units';
-import dataCancel from '../data/cancelUnits';
 import { connect } from 'react-redux';
 import { openDialog, openTaiwanLeft, openTaiwanRight, updateUnitsCancel } from '../actions';
 import NavItem from '../components/NavItem';
+
+const dataUnits = window.data.units;
+const dataCancel = window.data.cancelUnits;
 
 class Units extends Component {
     // constructor(props) {

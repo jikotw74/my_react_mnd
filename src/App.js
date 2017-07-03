@@ -1,18 +1,17 @@
 import React, { Component } from 'react';
-// import logo from './logo.svg';
 import './App.css';
 import NavItem from './components/NavItem';
 import People from './container/People';
 import Units from './container/Units';
-// import Videos from './container/Videos';
 import History from './container/History';
 import MattersBody from './container/MattersBody';
 import VideosBody from './container/VideosBody';
 import Footer from './container/Footer';
 import Dialogs from './container/Dialogs';
-import data from './data/data';
 import { connect } from 'react-redux'
 import { updateAppSelected, updateBodyChildren, moveTaiwanOrigin, closeDialog, updateVideoSelected } from './actions'
+
+const data = window.data.index;
 
 class App extends Component {
     // constructor(props) {

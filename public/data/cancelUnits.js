@@ -1,4 +1,4 @@
-export default [{
+data.cancelUnits = [{
     name: "綜合財務處 台北組",
     x: 950,
     y: 150,

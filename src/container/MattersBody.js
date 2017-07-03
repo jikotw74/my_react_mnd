@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import './MattersBody.css';
-import data from '../data/matter';
 import Matter from '../components/Matter';
 import { connect } from 'react-redux';
 
 var Scroll  = require('react-scroll');
 var Element    = Scroll.Element;
+const data = window.data.matter;
 
 class MattersBody extends Component {
     // constructor(props) {

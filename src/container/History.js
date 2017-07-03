@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import './History.css';
 import HistoryThumb from '../components/HistoryThumb';
-import data from '../data/history';
 import { connect } from 'react-redux'
 import { updateBodyChildren } from '../actions'
+
+const data = window.data.history;
 
 class History extends Component {
     constructor(props) {

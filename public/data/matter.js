@@ -1,6 +1,5 @@
 data.matter = [{
     year: 60,
-    y: 20,
     content: [
         {
             title: "民國60年1月",
@@ -12,12 +11,7 @@ data.matter = [{
         }
     ]
 },{
-    year: 61,
-    y: 22,
-    content: []
-},{
     year: 70,
-    y: 24,
     content: [
         {
             title: "民國70年2月",
@@ -26,7 +20,6 @@ data.matter = [{
     ]
 },{
     year: 73,
-    y: 26,
     content: [
         {
             title: "民國73年9月",
@@ -35,7 +28,6 @@ data.matter = [{
     ]
 },{
     year: 82,
-    y: 28,
     content: [
         {
             title: "民國82年7月",
@@ -44,7 +36,6 @@ data.matter = [{
     ]
 },{
     year: 86,
-    y: 30,
     content: [
         {
             title: "民國86年11月",
@@ -53,7 +44,6 @@ data.matter = [{
     ]
 },{
     year: 90,
-    y: 32,
     content: [
         {
             title: "民國90年7月",
@@ -62,7 +52,6 @@ data.matter = [{
     ]
 },{
     year: 91,
-    y: 34,
     content: [
         {
             title: "民國91年3月",
@@ -75,7 +64,6 @@ data.matter = [{
     ]
 },{
     year: 102,
-    y: 36,
     content: [
         {
             title: "民國102年1月",

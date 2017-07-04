@@ -16,7 +16,43 @@ data.units = [{
         width: '150px',
         top: '25px',
         isLeft: true
-    }
+    },
+    people: [
+        [
+            {
+                name: "于正平",
+                title: "上校代處長",
+                image: "units/someone.svg"
+            },
+            {
+                name: "李誠修",
+                title: "上校處長",
+                image: "units/someone.svg"
+            },
+            {
+                name: "黃長義",
+                title: "中校代處長",
+                image: "units/someone.svg"
+            }
+        ],
+        [
+            {
+                name: "于正平",
+                title: "上校代處長",
+                image: "units/someone.svg"
+            },
+            {
+                name: "李誠修",
+                title: "上校處長",
+                image: "units/someone.svg"
+            },
+            {
+                name: "黃長義",
+                title: "中校代處長",
+                image: "units/someone.svg"
+            }
+        ]
+    ]
 },{
     name: "宜蘭組",
     x: 960,

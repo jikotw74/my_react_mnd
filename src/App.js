@@ -9,7 +9,7 @@ import VideosBody from './container/VideosBody';
 import Footer from './container/Footer';
 import Dialogs from './container/Dialogs';
 import { connect } from 'react-redux'
-import { updateAppSelected, updateBodyChildren, moveTaiwanOrigin, closeDialog, updateVideoSelected } from './actions'
+import { updateAppSelected, updateBodyChildren, moveTaiwanOrigin, closeDialog, updateVideoSelected, updateUnitsCancel } from './actions'
 
 const data = window.data.index;
 
@@ -37,6 +37,7 @@ class App extends Component {
                     this.props.dispatch(updateBodyChildren(<People />));
                     break;
                 case 3:
+                    this.props.dispatch(updateUnitsCancel(false));
                     this.props.dispatch(updateBodyChildren(<Units />));
                     break;
                 case 4:

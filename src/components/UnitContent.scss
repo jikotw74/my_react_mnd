@@ -30,4 +30,37 @@
 		overflow-y: auto;
 		padding-right: 10px;
 	}
+	.Unit-people{
+
+	}
+	.Unit-people__title{
+		@include fontDFYanKai;
+		font-size: 24px;
+		color: white;
+		text-shadow: 1px 1px 10px black;
+		background: linear-gradient(to right, $color_nav_item_bg 0%, rgba(255,255,255,0.1) 100%);
+		padding: 5px;
+		width: 110px;
+	}
+	.Unit-people__wrapper{
+		display: flex;
+	}
+	.Unit-people__person{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.Unit-people__person-image{
+		width: 80px;
+		height: 80px;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+	.Unit-people__person-title{
+		display: flex;
+		justify-content: center;
+		@include fontDFYanKai;
+		font-size: 16px;
+	}
 }

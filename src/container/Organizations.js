@@ -3,6 +3,7 @@ import './Organizations.css';
 import Coin from '../components/Coin';
 import { connect } from 'react-redux'
 import { updateBodyChildren } from '../actions'
+import TextField from '../components/TextField';
 
 const organization = window.data.organization;
 
@@ -25,7 +26,7 @@ class Organizations extends Component {
                 backgroundImage: `url(${process.env.PUBLIC_URL + "resources/" + item.image})`
             }
             
-            const text = <div key="1" className="Organization-text">{item.text}</div>
+            const text = <TextField key="1" className="Organization-text" text={item.text} />;
             const children = [text];
             let ele = <div className="Organization-content" style={divStyle}>{children}</div>;
             this.props.dispatch(updateBodyChildren(ele));

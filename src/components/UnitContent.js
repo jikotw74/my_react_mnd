@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './UnitContent.css';
 import { connect } from 'react-redux';
 import { updateUnitsSubSelected } from '../actions';
+import TextField from './TextField';
 
 class UnitContent extends Component {
     // constructor(props) {
@@ -27,13 +28,6 @@ class UnitContent extends Component {
             }
             return <div key={index} className={subClassName} onClick={this.handleClick(index)}>{name}</div>
         });
-        const name = <div className="Unit-name-wrapper">{nameElements}</div>
-
-        let descriptions = data.description[this.props.unit.subSelected];
-        if(descriptions instanceof Array){
-            descriptions = descriptions.map((item, index) => <div className="Unit-description-p" key={index}>{item}</div>);
-        }
-        const description = <div className="Unit-description">{descriptions}</div>
 
         //
         let people = [];
@@ -58,8 +52,8 @@ class UnitContent extends Component {
 
         return (
             <div className={className}>
-                {name}
-                {description}
+                <div className="Unit-name-wrapper">{nameElements}</div>
+                <TextField className="Unit-description" text={data.description[this.props.unit.subSelected]}/>
                 {people}
             </div>
         );

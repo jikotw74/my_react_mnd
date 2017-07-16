@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Matter.css';
+import TextField from './TextField';
 
 class Matter extends Component {
   // constructor(props) {
@@ -20,9 +21,7 @@ class Matter extends Component {
             <div className="Matter-title">
                 {item.title}
             </div>
-            <div className="Matter-description">
-                {item.description}
-            </div>
+            <TextField className="Matter-description" text={item.description} />
         </div>
     });
 

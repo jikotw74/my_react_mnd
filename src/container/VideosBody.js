@@ -3,6 +3,7 @@ import './VideosBody.css';
 import { connect } from 'react-redux';
 import { DefaultPlayer as Video } from 'react-html5video';
 import 'react-html5video/dist/styles.css';
+import TextField from '../components/TextField';
 
 const data = window.data.video;
 
@@ -22,7 +23,7 @@ class VideosBody extends Component {
                 <Video className="Video-video" autoPlay
                     controls={['PlayPause', 'Seek', 'Time', 'Volume', 'Fullscreen']}
                     src={src} />
-                <div className="Video-content">{item.content}</div>
+                <TextField className="Video-content" text={item.content} />
             </div>
         );
     }

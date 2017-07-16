@@ -3,6 +3,7 @@ import './People.css';
 import Person from '../components/Person';
 import { connect } from 'react-redux'
 import { openDialog } from '../actions'
+import TextField from '../components/TextField';
 
 const data = window.data.people;
 
@@ -22,7 +23,7 @@ class People extends Component {
         const during = "起任日期：民國" + startArray[0] + "年" + startArray[1] + "月" + startArray[2] + "日 ~ 民國" + endArray[0] + "年" + endArray[1] + "月" + endArray[2] + "日";
         const description = <div key="2" className="Person-description">
             <div className="Person-detail-during">{during}</div>
-            <div className="Person-detail-text">{item.description}</div>
+            <TextField className="Person-detail-text" text={item.description} />
         </div>;
         
         const children = [image, description];

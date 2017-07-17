@@ -1,49 +1,78 @@
 .UnitContent {
   display: flex;
   flex-direction: column;
-  padding: 20px; }
-  .UnitContent .Unit-name-wrapper {
-    display: flex;
-    margin-bottom: 5px; }
-  .UnitContent .Unit-name {
-    font-family: 'DFYanKai', sans-serif;
-    font-size: 36px;
-    color: white;
-    text-shadow: 1px 1px 10px black;
-    margin-right: 10px;
-    padding: 10px;
-    cursor: pointer; }
-    .UnitContent .Unit-name.is-selected {
-      background: linear-gradient(to right, #802d00 0%, rgba(255, 255, 255, 0.1) 100%); }
-  .UnitContent .Unit-description {
-    font-family: 'DFYanKai', sans-serif;
-    flex: 1;
-    line-height: 2em;
-    font-size: 24px;
-    overflow-y: auto;
-    padding-right: 10px; }
-  .UnitContent .Unit-people__title {
-    font-family: 'DFYanKai', sans-serif;
-    font-size: 24px;
-    color: white;
-    text-shadow: 1px 1px 10px black;
-    background: linear-gradient(to right, #802d00 0%, rgba(255, 255, 255, 0.1) 100%);
-    padding: 5px;
-    width: 110px; }
-  .UnitContent .Unit-people__wrapper {
-    display: flex; }
-  .UnitContent .Unit-people__person {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; }
-  .UnitContent .Unit-people__person-image {
-    width: 80px;
-    height: 80px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center; }
-  .UnitContent .Unit-people__person-title {
-    display: flex;
-    justify-content: center;
-    font-family: 'DFYanKai', sans-serif;
-    font-size: 16px; }
+  padding: 20px;
+}
+
+.UnitContent .Unit-name-wrapper {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.UnitContent .Unit-content-wrapper {
+  display: flex;
+  flex: 1;
+}
+
+.UnitContent .Unit-name {
+  font-family: 'DFYanKai', sans-serif;
+  font-size: 36px;
+  color: white;
+  text-shadow: 1px 1px 10px black;
+  margin-right: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.UnitContent .Unit-name.is-selected {
+  background: linear-gradient(to right, #802d00 0%, rgba(255, 255, 255, 0.1) 100%);
+}
+
+.UnitContent .Unit-description {
+  font-family: 'DFYanKai', sans-serif;
+  flex: 1;
+  line-height: 2em;
+  font-size: 24px;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.UnitContent .Unit-people__title {
+  font-family: 'DFYanKai', sans-serif;
+  font-size: 24px;
+  color: white;
+  text-shadow: 1px 1px 10px black;
+  background: linear-gradient(to right, #802d00 0%, rgba(255, 255, 255, 0.1) 100%);
+  padding: 5px;
+  width: 110px;
+  cursor: pointer;
+}
+
+.UnitContent .Unit-people__wrapper {
+  display: flex;
+}
+
+.UnitContent .Unit-people__person {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 120px;
+  width: 120px;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.UnitContent .Unit-people__person-image {
+  width: 80px;
+  height: 80px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.UnitContent .Unit-people__person-title {
+  display: flex;
+  justify-content: center;
+  font-family: 'DFYanKai', sans-serif;
+  font-size: 16px;
+}

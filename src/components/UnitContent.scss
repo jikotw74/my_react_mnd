@@ -10,6 +10,10 @@
 		display: flex;
 		margin-bottom: 5px;
 	}
+	.Unit-content-wrapper{
+		display: flex;
+		flex: 1;
+	}
 	.Unit-name{
 		@include fontDFYanKai;
 		font-size: 36px;
@@ -41,6 +45,7 @@
 		background: linear-gradient(to right, $color_nav_item_bg 0%, rgba(255,255,255,0.1) 100%);
 		padding: 5px;
 		width: 110px;
+		cursor: pointer;
 	}
 	.Unit-people__wrapper{
 		display: flex;
@@ -49,6 +54,10 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
+		height: 120px;
+		width: 120px;
+		align-items: center;
+		border: 1px solid rgba(0, 0, 0, 0.1);
 	}
 	.Unit-people__person-image{
 		width: 80px;

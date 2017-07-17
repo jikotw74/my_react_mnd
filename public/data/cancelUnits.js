@@ -1,7 +1,7 @@
 data.cancelUnits = [{
     name: "綜合財務處 台北組",
-    x: 950,
-    y: 150,
+    x: 1017,
+    y: 85,
     width: '190px',
     height: '80px',
     isLeft: true,
@@ -18,13 +18,13 @@ data.cancelUnits = [{
     line: {
         left: '-150px',
         width: '150px',
-        top: '25px',
+        top: '9px',
         isLeft: true
     }
 },{
     name: "基隆組",
-    x: 970,
-    y: 105,
+    x: 1067,
+    y: 50,
     width: 'auto',
     height: '40px',
     isLeft: true,
@@ -42,8 +42,8 @@ data.cancelUnits = [{
     }
 },{
     name: "龍岡財勤處",
-    x: 490,
-    y: 145,
+    x: 541,
+    y: 113,
     width: 'auto',
     height: '40px',
     isLeft: false,
@@ -61,8 +61,8 @@ data.cancelUnits = [{
     }
 },{
     name: "東勢財勤處",
-    x: 345,
-    y: 305,
+    x: 411,
+    y: 273,
     width: 'auto',
     height: '40px',
     isLeft: false,
@@ -80,8 +80,8 @@ data.cancelUnits = [{
     }
 },{
     name: "旗山財勤處",
-    x: 240,
-    y: 540,
+    x: 291,
+    y: 591,
     width: 'auto',
     height: '40px',
     isLeft: false,
@@ -99,8 +99,8 @@ data.cancelUnits = [{
     }
 },{
     name: "岡山組",
-    x: 360,
-    y: 620,
+    x: 379,
+    y: 625,
     width: 'auto',
     height: '40px',
     isLeft: false,
@@ -118,8 +118,8 @@ data.cancelUnits = [{
     }
 },{
     name: "鳳山組",
-    x: 320,
-    y: 750,
+    x: 242,
+    y: 664,
     width: 'auto',
     height: '40px',
     isLeft: false,

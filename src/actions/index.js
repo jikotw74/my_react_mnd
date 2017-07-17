@@ -56,3 +56,8 @@ export const updateUnitsSubSelected = (subSelected) => ({
     type: 'UPDATE_UNITS_SUB_SELECTED',
     subSelected
 });
+
+export const updateUnitsPeople = (people) => ({
+    type: 'UPDATE_UNITS_PEOPLE',
+    people
+});

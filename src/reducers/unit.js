@@ -3,7 +3,8 @@ const initState = {
     isLeft: false,
     selected: 0,
     subSelected: 0,
-    cancel: false
+    cancel: false,
+    people: false
 };
 
 const unit = (state = initState, action) => {
@@ -14,7 +15,8 @@ const unit = (state = initState, action) => {
                 open: true, 
                 isLeft: true,
                 selected: action.selected,
-                subSelected: 0
+                subSelected: 0,
+                people: false
             }
         case 'OPEN_TAIWAN_RIGHT':
             return {
@@ -22,7 +24,8 @@ const unit = (state = initState, action) => {
                 open: true,
                 isLeft: false,
                 selected: action.selected,
-                subSelected: 0
+                subSelected: 0,
+                people: false
             }
         case 'MOVE_TAIWAN_ORIGIN':
             return {
@@ -30,7 +33,8 @@ const unit = (state = initState, action) => {
                 open: false,
                 isLeft: false,
                 selected: 0,
-                subSelected: 0
+                subSelected: 0,
+                people: false
             }
         case 'UPDATE_UNITS_CANCEL':
             return {
@@ -41,6 +45,11 @@ const unit = (state = initState, action) => {
             return {
                 ...state,
                 subSelected: action.subSelected
+            }
+        case 'UPDATE_UNITS_PEOPLE':
+            return {
+                ...state,
+                people: action.people
             }
         default:
             return state

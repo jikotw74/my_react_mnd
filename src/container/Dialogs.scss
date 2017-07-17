@@ -32,18 +32,21 @@ $contentMarginRight: 0px;
 	}
 	&.has-left-tw{
 		.Dialogs-taiwan{
-			left: $tw_left - 450px;		
+			left: $tw_left - 880px;		
 			z-index: $zIndex_tw_open;
 		}
 		.Dialogs-close-btn{
-			top: 250px;
-    		right: 30px;
+			top: 30px;
+    		right: 0px;
+    		width: 110px;
+    		height: 120px;
 		}
 		.Dialogs-content{
-			$contentMarginLeft: 220px;
-			width: $App_width - $App_nav_width - $contentMarginLeft -50px;
-			left:$App_nav_width + $contentMarginLeft;
-			padding-left: 250px;
+			background-image: url('../images/dialog_content_2.png');
+			// $contentMarginLeft: 220px;
+			// width: $App_width - $App_nav_width - $contentMarginLeft -50px;
+			// left:$App_nav_width + $contentMarginLeft;
+			padding-left: 720px;
 		}
 	}
 	&.has-right-tw{
@@ -52,11 +55,15 @@ $contentMarginRight: 0px;
 			z-index: $zIndex_tw_open;
 		}
 		.Dialogs-close-btn{
-			top: 240px;
-    		right: 380px;
+			top: 200px;
+    		right: 330px;
+    		width: 100px;
+    		height: 85px;
 		}
 		.Dialogs-content{
-			padding-right: 300px;
+			background-image: url('../images/dialog_content_1.png');
+			padding-top: 290px;
+			padding-right: 620px;
 		}
 	}
 }
@@ -67,26 +74,26 @@ $contentMarginTop:280px;
 	@include fade-in(0.6s);
 	$contentHeight: $App_height - ($contentMarginTop * 2);
 	position: absolute;
-	background-color: $color_dialog_bg;
-	height: $contentHeight;
-	top:$contentMarginTop;
-	width: $App_width - $contentMarginRight;
+	// background-color: $color_dialog_bg;
+	height: $App_height;
+	top:0;
+	width: $App_width;
 	left:0;
-	padding-left: $App_nav_width;
     display: flex;
-    background-image: url('../images/dialog_content.png');
-    background-size: cover;
-    background-position: center center;
+    background-image: url('../images/dialog_content_3.png');
+    background-size: $App_width $App_height;
+    background-position: 0 0;
+    padding-top: $App_header_height + 160px;
+    padding-left: $App_nav_width;
+	padding-bottom: 250px;
 }
 
 .Dialogs-close-btn {
 	@include closeBtn;
-	$closeW: 80px;
-	$closeH: 80px;
-    top: $contentMarginTop - ($closeH / 2);
+    top: 185px;
     right: 0;
-    width: $closeW;
-    height: $closeH;
+    width: 85px;
+    height: 85px;
 }
 
 .Dialogs_black-screen{
@@ -103,10 +110,10 @@ $contentMarginTop:280px;
 .Dialogs-taiwan{
 	@include fade-in;
 	position: absolute;
-	width: 800px;
-	height: 780px;
+	width: 1106px;
+	height: 1080px;
 	background-image: url('../images/taiwan.png');
-	background-size: contain;
+	background-size: 1106px 1080px;
 	background-repeat: no-repeat;
 	transition:all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
 	top:$tw_top;

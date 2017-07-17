@@ -1,7 +1,7 @@
 data.units = [{
     name: "台北處、儲蓄會 薪俸組、新北組",
-    x: 950,
-    y: 120,
+    x: 1008,
+    y: 61,
     width: '245px',
     height: '80px',
     isLeft: true,
@@ -55,8 +55,8 @@ data.units = [{
     ]
 },{
     name: "宜蘭組",
-    x: 960,
-    y: 230,
+    x: 1018,
+    y: 173,
     width: 'auto',
     height: '40px',
     isLeft: true,
@@ -69,8 +69,8 @@ data.units = [{
     }
 },{
     name: "花蓮組",
-    x: 915,
-    y: 380,
+    x: 976,
+    y: 321,
     width: 'auto',
     height: '40px',
     isLeft: true,
@@ -83,8 +83,8 @@ data.units = [{
     }
 },{
     name: "台東組",
-    x: 860,
-    y: 595,
+    x: 923,
+    y: 537,
     width: 'auto',
     height: '40px',
     isLeft: true,
@@ -97,8 +97,8 @@ data.units = [{
     }
 },{
     name: "龍潭組、中壢組",
-    x: 420,
-    y: 145,
+    x: 519,
+    y: 87,
     width: 'auto',
     height: '40px',
     isLeft: false,
@@ -108,14 +108,14 @@ data.units = [{
     ],
     line: {
         left: '220px',
-        width: '100px',
+        width: '60px',
         top: '15px',
         isLeft: false,
     }
 },{
     name: "馬祖組",
-    x: 210,
-    y: 115,
+    x: 270,
+    y: 58,
     width: 'auto',
     height: '40px',
     isLeft: false,
@@ -128,8 +128,8 @@ data.units = [{
     }
 },{
     name: "金門組",
-    x: 250,
-    y: 230,
+    x: 395,
+    y: 203,
     width: 'auto',
     height: '40px',
     isLeft: false,
@@ -142,8 +142,8 @@ data.units = [{
     }
 },{
     name: "台中處、新竹組、豐原組",
-    x: 160,
-    y: 305,
+    x: 216,
+    y: 280,
     width: 'auto',
     height: '40px',
     isLeft: false,
@@ -160,8 +160,8 @@ data.units = [{
     }
 },{
     name: "雲林組",
-    x: 340,
-    y: 400,
+    x: 336,
+    y: 378,
     width: 'auto',
     height: '40px',
     isLeft: false,
@@ -174,8 +174,8 @@ data.units = [{
     }
 },{
     name: "澎湖組",
-    x: 220,
-    y: 440,
+    x: 258,
+    y: 420,
     width: 'auto',
     height: '40px',
     isLeft: false,
@@ -216,8 +216,8 @@ data.units = [{
     }
 },{
     name: "高雄處、左營組",
-    x: 240,
-    y: 620,
+    x: 255,
+    y: 631,
     width: 'auto',
     height: '40px',
     isLeft: false,
@@ -233,8 +233,8 @@ data.units = [{
     }
 },{
     name: "屏東組",
-    x: 320,
-    y: 750,
+    x: 354,
+    y: 764,
     width: 'auto',
     height: '40px',
     isLeft: false,

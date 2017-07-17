@@ -17,10 +17,11 @@
     position: absolute;
     width: $closeW;
     height: $closeH;
-    background-color: black;
     cursor: pointer;
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
-    background-image: url('../images/ic_clear_white_24dp_2x.png');
-    background-size: cover;
-    background-position: center center;
+    // background-color: black;
+    // box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
+    // background-image: url('../images/ic_clear_white_24dp_2x.png');
+    // background-size: cover;
+    // background-position: center center;
+    border: 1px solid red;
 }
